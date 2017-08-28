@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Info Generator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1 class="login">Enter Basic Information</h1>
+        </div>
+        <div class="login">
+            <form class="login-submit" onsubmit="displayinfo.html">
+                <p>
+                    <label for="login">Employee# </label>
+                    <input type="text" name="employeeID" id="empID" placeholder="123456">
+                </p>
+                <p>
+                    <label for="login">Department# </label>
+                    <input type="text" name="departmentID" id="deptID" placeholder="123">
+                </p>
+                <p>
+                    <button class="login-button" type="submit" onclick="'../javaData/com/imcs/employeedisplay/GetEmployeeInfo.java'">Find Employee</button>
+                    <button class="login" type="reset">Reset Form</button>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
